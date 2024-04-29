@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+    --pink: #ad28eb;
+}
+
+
+
+body {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: auto;
+    background-color: var(--light-pink);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(10rem);
+    width: 39rem;
+    background-color: var(--white);
+    gap: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 1.2rem;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.006),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.008),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.01),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.012),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.014),
+        100px 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+main h1,
+h3 {
+    color: var(--dark-purple);
+    transition: color 0.25s ease;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+main header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+main ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+main ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+}
+
+hr {
+    width: 100%;
+    border: solid 1px var(--light-pink);
+}
+
+main ul li .bt-more {
+    cursor: pointer;
+}
+
+main ul li section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+main ul li h3:hover {
+    color: var(--pink);
+}
+
+main ul li section img {
+    display: flex;
+    justify-self: flex-end;
+}
+
+main ul li article {
+    display: none;
+    color: var(--grayish-purple);
+    text-align: left;
+}
+
+main ul li article.active {
+    display: block;
+    padding-top: 1rem;
+}
