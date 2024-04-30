@@ -93,6 +93,9 @@ hr {
 
 main ul li .bt-more {
     cursor: pointer;
+    border: none;
+    border-style: none;
+    background-color: transparent;
 }
 
 main ul li section {
